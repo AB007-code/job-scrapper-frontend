@@ -1,4 +1,4 @@
-:root {
+/* body {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -15,4 +15,132 @@
 .col {
   background-color: #242424;
   color: aliceblue;
+} */
+/* body {
+  background: #000;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+} */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #000 !important;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.section-wrapper {
+  padding: 30px;
+  min-height: 100vh;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6ec7, #0ff, #ffea00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #bbb;
+}
+.subtitle span {
+  color: #0ff;
+  font-weight: 600;
+}
+
+.form-box {
+  background: rgba(25, 25, 25, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 25px rgba(0, 255, 255, 0.2);
+}
+
+.neon-input {
+  background: #111;
+  color: #fff;
+  border: 1px solid #0ff;
+}
+.neon-input:focus {
+  border-color: #ff6ec7;
+  box-shadow: 0px 0px 10px #ff6ec7;
+}
+
+.neon-btn {
+  background: linear-gradient(90deg, #ff6ec7, #0ff);
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+.neon-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px #ff6ec7;
+}
+
+.glowing-text {
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.alert-box {
+  background: rgba(255, 0, 80, 0.1);
+  border: 1px solid #ff6ec7;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.google-link {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  color: #888;
+  font-size: 1rem;
+}
+
+.update-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin: 20px auto;
+  padding: 15px 25px;
+
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.5);
+
+  width: fit-content;
+  min-width: 60%;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
