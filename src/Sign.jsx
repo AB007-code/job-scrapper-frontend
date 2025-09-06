@@ -100,13 +100,16 @@ const Sign = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://job-scapper.onrender.com/signin", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://job-scapper-at85.onrender.com/signin",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const result = await response.json();
       console.log("Server response:", result.message);

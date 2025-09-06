@@ -365,7 +365,7 @@ const Section = () => {
       button.current.disabled = true;
       try {
         let response = await fetch(
-          "https://job-scapper.onrender.com/products",
+          "https://job-scapper-at85.onrender.com/products",
           {
             method: "POST",
             headers: {
@@ -390,7 +390,9 @@ const Section = () => {
       button.current.disabled = true;
     }
     const interval = setInterval(async () => {
-      const res = await fetch("https://job-scapper.onrender.com/task-status");
+      const res = await fetch(
+        "https://job-scapper-at85.onrender.com/task-status"
+      );
       const data = await res.json();
       if (data.status1 === true) {
         setStatus("Submit");
